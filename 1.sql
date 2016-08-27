@@ -1,2 +1,2 @@
 SELECT FirstName || ' ' || LastName AS 'Full Name', CustomerId, Country FROM Customer
-WHERE Country != 'US'
+WHERE Country != 'US';
