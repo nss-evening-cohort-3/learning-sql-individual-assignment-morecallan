@@ -6,4 +6,7 @@ WHERE InvoiceDate LIKE '%2009%' OR InvoiceDate LIKE '%2011%'
 /* What are the respective total sales for each of those years? */
 
 SELECT TOTAL(Total) FROM Invoice
-WHERE InvoiceDate LIKE '%2009%' OR InvoiceDate LIKE '%2011%'
+WHERE InvoiceDate LIKE '%2009%';
+
+SELECT TOTAL(Total) FROM Invoice
+WHERE InvoiceDate LIKE '%2011%';
