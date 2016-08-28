@@ -5,5 +5,5 @@ JOIN Customer ON Invoice.CustomerId == Customer.CustomerId
 JOIN Employee ON Customer.SupportRepId == Employee.EmployeeId
 WHERE strftime('%Y', Invoice.InvoiceDate ) == '2009'
 GROUP BY Employee.EmployeeId
-ORDER BY Invoice.Total DESC
+ORDER BY 'Sales Total' DESC
 LIMIT 1;
