@@ -4,3 +4,8 @@ SELECT TOTAL(Invoice.Total) AS 'Total Spent Per Country', Invoice.BillingCountry
 GROUP BY Invoice.BillingCountry;
 
 /*Which country's customers spent the most?*/
+
+SELECT TOTAL(Invoice.Total) AS 'Total Spent Per Country', Invoice.BillingCountry FROM Invoice
+GROUP BY Invoice.BillingCountry
+ORDER BY 1 DESC
+LIMIT 1;
